@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F40FFB30-3C3C-41F4-87C0-73137AB9FAB5}</ProjectGuid>
+    <ProjectGuid>{B64A853B-1CC9-4AA3-B350-814DE9997201}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>CoCo</RootNamespace>
+    <RootNamespace>Ioc</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -146,12 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="SyncQueue.h" />
-    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="Any.hpp" />
+    <ClInclude Include="Ioc.hpp" />
+    <ClInclude Include="NonCopyable.hpp" />
+    <ClInclude Include="Test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ThreadPool.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -33,6 +33,5 @@ namespace CoCo
 
 		std::atomic_bool m_Running;
 		std::once_flag m_Flag;
-
 	};
 }
